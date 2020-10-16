@@ -1,0 +1,111 @@
+
+{
+"CLASS_TO_IDX" : {
+                "region":{
+                          "background":0,
+                          "chart_title":1,
+                          "x_axis":2,
+                          "y_axis":3,
+                          "legend":4,
+                          "plot":5
+                },
+                "x_axis":{
+                        "background":0,
+                        "x_tick_pt":1,
+                        "x_tick_label":2,
+                        "x_axis_title":3
+                        },
+                "y_axis":{
+                        "background":0,
+                        "y_tick_pt":1,
+                        "y_tick_label":2,
+                        "y_axis_title":3
+                        },
+                "legend":{
+                        "background":0,
+                        "legend_title":1,
+                        "legend_label":2,
+                        "legend_marker":3
+                        },
+                "plot":{
+                        "background":0,
+                        "boxplots":1,
+                        "bars":2,
+                        "lines":3,
+                        "scatter points":4,
+                        "text":5
+                       }
+               },
+"MODEL_ARCH" : "resnet50",
+
+"MIN_AREA" : {
+            "region":{
+                      "0":0,
+                      "1":100,
+                      "2":1000,
+                      "3":1000,
+                      "4":500,
+                      "5":200000
+                     },
+            "x_axis":{
+                      "0":0,
+                      "1":0,
+                      "2":100,
+                      "3":100
+                     },
+            "y_axis":{
+                      "0":0,
+                      "1":0,
+                      "2":100,
+                      "3":100
+                     },
+            "legend":{
+                      "0":0,
+                      "1":300,
+                      "2":300,
+                      "3":30
+                     },
+            "plot":{
+                      "0":0,
+                      "1":100,
+                      "2":1000,
+                      "3":1000,
+                      "4":500,
+                      "5":200000
+                    }
+           },
+
+"NUM_KERNELS_TRAIN" : 6,
+
+"IMG_SIZE_TRAIN" : {"height":768,
+                    "width":768
+                   },
+
+"PROJECT_ROOT_DIR" : "/home/mitulraj/psenet",
+"DATASETS" : {"synthetic":{"train":{"image":"/run1/Chart_Data/CHART-Synthetic/train/images",
+                                  "gt":"/run1/Chart_Data/CHART-Synthetic/train/gt_json_axis_disamb"
+                                 },
+                         "test":{"image":"/run1/Chart_Data/CHART-Synthetic/test/task2/images",
+                                 "gt":"/run1/Chart_Data/CHART-Synthetic/test/task2/gt_json_axis_disamb"
+                                }
+                        },
+            "pmc":      {"train":{"image":"/run1/Chart_Data/PMC/tasks345/images",
+                                  "gt":"/run1/Chart_Data/PMC/tasks345/gt_json_axis_disamb"
+                                 },
+                         "test":{"image":"/run1/Chart_Data/PMC/task1_orig",
+                                 "gt":"/run1/Chart_Data/PMC/gt_json"
+                                }
+                        }
+        },
+
+"MIN_SCALE" : 0.4,
+"LR" : 0.001,
+"LR_SCHEDULE" : [3,5],
+"KERNEL_LOSS_WEIGHT" : 0.3,
+
+
+"MIN_SCORE" : 0.6,
+"NUM_KERNELS_TEST" : 2,
+"IMG_LONG_SIZE_TEST" : 0,
+"MODEL_OUTPUT_SCALE" : 1
+}
