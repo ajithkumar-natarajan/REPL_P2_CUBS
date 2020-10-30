@@ -1,0 +1,1 @@
+prints class_to_idx
